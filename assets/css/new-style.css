@@ -80,3 +80,22 @@ a{
     right: 0;
    
 }
+
+@media only screen and (max-width:768px){
+    .container>.navbar-header{
+         margin-right: auto!important;
+        margin-left: auto!important;
+    }
+    .slick-button {
+        box-shadow: none!important;
+        padding: 1em!important;
+
+    }
+    .slick-button#prev{ 
+        left: -1em;
+    }
+    .slick-button#next{
+        right: -1em;
+       
+    }
+}
