@@ -12,7 +12,7 @@ get_header();
 
 endif;
 ?>
-?>
+
 <div id="primary" class=" page-header header-small"  style="background-image: url(<?= $image[0] ?>);">
     <div class="container">
 
