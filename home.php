@@ -14,13 +14,13 @@ get_header()
 endif;
 ?>
 
-<div id="primary" class=" page-header header-small" style="background-image: url(<?= $image[0] ?>);">
+<div id="primary" class=" page-header header-small" style="background-image: url(<?= $image[0] ?>) ; height: 100vh;">
     <div class="container">
 
         <div class="col-md-10 col-md-offset-1 text-center">
             <h1 class="hestia-title "><?php the_title() ?></h1>
             <div class="row hestia-big-title-content">
-                <div class="big-title-slider-content text-center col-sm-8 col-sm-offset-2 		">
+                <div class="big-title-slider-content text-center col-sm-8 col-sm-offset-2 ">
                     <span class="sub-title"><?php the_field('home_banner_text'); ?></span>
                     <div class="buttons">
 
