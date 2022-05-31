@@ -24,8 +24,6 @@ endif;
                     <span class="sub-title"><?php the_field('home_banner_text'); ?></span>
                     <div class="buttons">
 
-
-
                         <?php
                         $link = get_field('home_banner_link');
 
@@ -49,6 +47,7 @@ endif;
 </div>
 
 <div class="main ">
+
     <div class="blog-post ">
         <main class="contatct-main">
 
@@ -265,27 +264,27 @@ endif;
                                     <div class="views-row views-row-1 views-row-odd views-row-first">
 
                                         <div class="views-field views-field-field-image">
-                                            <div class="field-content"><img src="<?php the_field('bottom_block1_img'); ?>" ></div>
+                                            <div class="field-content"><img src="<?php the_field('bottom_block1_img'); ?>"></div>
                                         </div>
                                         <div class="text-wrapper views-fieldset" data-module="views_fieldsets">
                                             <div class="views-field views-field-title"><span class="field-content"><?php the_field('bottom_block1_title'); ?></span></div>
                                             <div class="views-field views-field-field-link">
                                                 <div class="field-content">
-                                                  
+
                                                     <?php
-                                                        $link = get_field('bottom_block1_link');
+                                                    $link = get_field('bottom_block1_link');
 
-                                                        if ($link) :
+                                                    if ($link) :
 
-                                                            $link_url = $link['url'];
+                                                        $link_url = $link['url'];
 
-                                                            $link_title = $link['title'];
+                                                        $link_title = $link['title'];
 
-                                                            $link_target = $link['target'] ? $link['target'] : '_self'; ?>
+                                                        $link_target = $link['target'] ? $link['target'] : '_self'; ?>
 
-                                                            <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                                        <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
 
-                                                        <?php endif; ?>
+                                                    <?php endif; ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -294,28 +293,28 @@ endif;
                                     <div class="views-row views-row-2 views-row-even views-row-last">
 
                                         <div class="views-field views-field-field-image">
-                                            <div class="field-content"><img src="<?php the_field('bottom_block2_img'); ?>" ></div>
+                                            <div class="field-content"><img src="<?php the_field('bottom_block2_img'); ?>"></div>
                                         </div>
                                         <div class="text-wrapper views-fieldset" data-module="views_fieldsets">
                                             <div class="views-field views-field-title"><span class="field-content"><?php the_field('bottom_block2_title'); ?></span></div>
                                             <div class="views-field views-field-field-link">
-                                            <div class="field-content">
-                                                  
-                                                  <?php
-                                                      $link = get_field('bottom_block2_link');
+                                                <div class="field-content">
 
-                                                      if ($link) :
+                                                    <?php
+                                                    $link = get_field('bottom_block2_link');
 
-                                                          $link_url = $link['url'];
+                                                    if ($link) :
 
-                                                          $link_title = $link['title'];
+                                                        $link_url = $link['url'];
 
-                                                          $link_target = $link['target'] ? $link['target'] : '_self'; ?>
+                                                        $link_title = $link['title'];
 
-                                                          <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                                        $link_target = $link['target'] ? $link['target'] : '_self'; ?>
 
-                                                      <?php endif; ?>
-                                              </div>
+                                                        <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+
+                                                    <?php endif; ?>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -341,9 +340,8 @@ endif;
 
         </main>
     </div>
-
+</div>
 
 
 
     <?php get_footer() ?>
-</div>
