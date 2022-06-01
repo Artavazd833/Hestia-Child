@@ -209,13 +209,14 @@ footer .info {
     font-size: 16px;
 }
 
-#main-navigation .phone-number a{
+#main-navigation .phone-number >a{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
     font-size: 14px;
     background-color: #f79521;
+    color: #fff!important;
     
 }
 #main-navigation .phone-number a i{
@@ -227,6 +228,59 @@ footer .info {
     justify-content: center;
     align-items: center;
 
+}
+#map {
+    min-height: 360px;
+    max-width: 1022px;
+    display: block;
+    margin: 0 auto;
+    background-image: url('../images/contact.png');
+    background-position: right;
+    background-size: 511px auto, 360px auto;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #ffb933;
+    background-color: #efefef;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2em 0;
+}
+#map .row-fluid {
+    width: 50%;
+    text-align: center;
+}
+#map .row-fluid h3 {
+    margin-top: 23px;
+}
+
+#map p {
+    font-family: "Myriad W08",Arial,Helvetica,sans-serif;
+    color: #464646;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.form-container form input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], textarea {
+    font-size: normal;
+    border: 2px solid #dfe5e8!important;
+    border-radius: 8px!important;
+    box-shadow: none;
+    line-height: normal;
+    max-width: 100%;
+    padding: 0.8em 1.563em!important;
+    width: 100%;
+    -webkit-appearance: none;
+    color: #fff!important;
+}
+.form-container form {
+    width: 100%;
+    padding: 16px;
+    background: #f79521;
+
+}
+
+.form-container form  label {
+    color: #fff!important;
 }
 
 @media only screen and (max-width: 1024px){
@@ -263,5 +317,22 @@ footer .info > div {
     padding-right: 20px;
     text-align: left;
     padding-left: 40px;
+}#map {
+    padding: 50px;
+    background-image: none;
+}
+#map .row-fluid {
+    width: 100%;
+    text-align: center;
+}
+#map .row-fluid h3 {
+    margin-top: 0px;
+}
+#map p {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 }
+

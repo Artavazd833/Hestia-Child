@@ -7,7 +7,14 @@
 
 get_header()
 ?>
-<div id="primary" class=" page-header header-small" style="background-image: url(<?= the_field("top_background_image") ?>);">
+
+<?php if (has_post_thumbnail($post->ID)) :
+    $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
+
+endif;
+?>
+
+<div id="primary" class=" page-header header-small" style="background-image: url(<?= $image[0] ?>)">
     <div class="container">
 
         <div class="col-md-10 col-md-offset-1 text-center">
@@ -21,87 +28,37 @@ get_header()
         <div class="contatct-main">
             <div class="container">
 
-                <div class=" row">
+                <?php echo do_shortcode('[cta]'); ?>
 
-                    <div class="col-md-4">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+
+
+
+                <div class="row acenter d-flex">
+                    <div class="col-md-6 col-xs-12">
+                        <h2> <?php the_field('contact_form_header'); ?></h2>
+                        <?php the_field('contact_form_subtext'); ?>
+                        <div class="form-container">
+                            <?php echo do_shortcode('[contact-form-7 id="202" title="Contact form"]'); ?>
+                        </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                    <div class="col-md-6 col-xs-12">
+                        <?php the_field('contact_form_large_text'); ?>
                     </div>
-
-
-
                 </div>
-                <div class=" row">
-
-                    <div class="col-md-4">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
 
 
-
-                </div>
 
             </div>
+
+
+
         </div>
     </div>
+</div>
 
 
 
 
-    <?php get_footer() ?>
+<?php get_footer() ?>
 </div>

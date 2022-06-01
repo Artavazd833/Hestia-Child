@@ -18,10 +18,6 @@ function load_style_script()
    wp_enqueue_script('light_js', get_stylesheet_directory_uri() . '/assets/js/lightslider.min.js');
    wp_enqueue_script('index_js', get_stylesheet_directory_uri() . '/assets/js/index.js');
    
-
-//   wp_enqueue_script('slider_js', get_stylesheet_directory_uri() . '/assets/js/lightslider.min.js');
-
-//   wp_enqueue_script('init_js', get_stylesheet_directory_uri() . '/assets/js/main.js');
 }
 
 add_action('wp_enqueue_scripts', 'load_style_script');
@@ -47,10 +43,20 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'Footer',
 		'parent_slug'	=> 'theme-general-settings',
 	));
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Episodes page',
-		'menu_title'	=> 'Episodes',
-		'parent_slug'	=> 'theme-general-settings',
-	));
+	
 	
 }
+
+function cta_action(){
+	    echo '<div class="d-flex acenter jcenter cta-wrap ">';
+		echo ' <div id="map"> <div class="row-fluid">';
+		echo '  <h3>'. the_field("cta_headline", "option"). '</h3>';
+        echo '  <p>' .the_field("cta_text_par", "option") . ' </p>';
+		echo ' <p class="rtecenter">';
+		echo ' <a class="cta_button btn" href="';
+		echo  the_field("cta_link", "option") .'">';
+		echo  the_field("cta_text", "option") .'</a>  </p>   </div>  </div> </div>'; 
+
+}
+
+add_shortcode('cta', 'cta_action');
