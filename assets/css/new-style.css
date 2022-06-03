@@ -295,8 +295,10 @@ footer .info {
     margin:  4em 0; 
 }
 .tab-of-content button {
-        background-color: #f79521;
-        border-radius: 8px;
+    background-color: #f79521;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
 }
 
 .service-title {

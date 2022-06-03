@@ -69,7 +69,7 @@ endif;
                                         <div class="views-row row-revers">
 
                                             <div class="views-field views-field-field-image">
-                                                <div class="field-content"><img src=/wp-content/uploads/2022/05/IMG-7760-1.jpeg"></div>
+                                                <div class="field-content"><img src="/wp-content/uploads/2022/05/IMG-7765-1.jpg"></div>
                                             </div>
 
                                             <div class="text-wrapper views-fieldset">
@@ -103,7 +103,7 @@ endif;
                                         <div class="views-row row-revers">
 
                                             <div class="views-field views-field-field-image">
-                                                <div class="field-content"><img src="/wp-content/uploads/2022/05/bottom1.jpeg"></div>
+                                                <div class="field-content"><img src="/wp-content/uploads/2022/05/bottom2-1536x900-1.jpg"></div>
                                             </div>
                                             <div class="text-wrapper views-fieldset">
 
@@ -134,7 +134,7 @@ endif;
                                         <div class="views-row row-revers">
 
                                             <div class="views-field views-field-field-image">
-                                                <div class="field-content"><img src="/wp-content/uploads/2022/05/IMG-7784.jpeg"></div>
+                                                <div class="field-content"><img src="/wp-content/uploads/2022/05/IMG-7760-1.jpg"></div>
                                             </div>
                                             <div class="text-wrapper views-fieldset">
 
