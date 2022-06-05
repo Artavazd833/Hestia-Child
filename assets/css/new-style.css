@@ -239,6 +239,7 @@ footer .info {
 #footer .footer_icons .social_media>li {
     max-width: 30px;
     max-height: 30px;
+    margin: 0 0.5em;
 }
 
 #footer a {
