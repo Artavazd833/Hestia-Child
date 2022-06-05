@@ -11,12 +11,12 @@
                 <li class="less">
                     <b><?php the_field('footer_phon_tex_spain', 'option') ?> </b>
                     <a href="tel:<?php the_field('footer_phone_link', 'option') ?>"><?php the_field('footer_phone_link_nums', 'option') ?></a>
-                    
+
                 </li>
                 <li>
                     <b><?php the_field('footer_email_text', 'option') ?></b>
-                   <a href="mailto:<?php the_field('footer_email_link', 'option') ?>"><?php the_field('footer_email_link', 'option') ?></a>
-                   
+                    <a href="mailto:<?php the_field('footer_email_link', 'option') ?>"><?php the_field('footer_email_link', 'option') ?></a>
+
                 </li>
             </ul>
         </div>
@@ -34,7 +34,15 @@
         </ul>
 
     </div>
-    <div class='flex jcenter acenter copyright'> <?php the_field('copyright', 'option') ?> <?php echo date('Y') ?> </div>
+    <div class=' copyright flex acenter  '>
+        
+            <div class="copyrigt-text"> <?php the_field('copyright', 'option') ?> <?php echo date('Y') ?> </div>
+
+            <div class="privacy-link"><a href="<?php the_field('privacy_page_link', 'option') ?>"><?php the_field('privacy_page_title', 'option') ?></a></div>
+       
+
+    </div>
+
 </footer>
 </div>
 </div>

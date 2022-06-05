@@ -1,35 +1,43 @@
 <?php
-/**
- * The template for displaying all single posts and attachments.
- *
- * @package Hestia
- * @since Hestia 1.0
- */
 
-get_header();
 
-do_action( 'hestia_before_single_page_wrapper' );
-
+get_header()
 ?>
-<div class="<?php echo hestia_layout(); ?>">
-	<?php
-	$class_to_add = '';
-	if ( class_exists( 'WooCommerce', false ) && ! is_cart() ) {
-		$class_to_add = 'blog-post-wrapper';
-	}
-	?>
-	<div class="blog-post <?php esc_attr( $class_to_add ); ?>">
-		<div class="container">
-			<?php
-			if ( have_posts() ) :
-				while ( have_posts() ) :
-					the_post();
-					get_template_part( 'template-parts/content', 'page' );
-				endwhile;
-				else :
-					get_template_part( 'template-parts/content', 'none' );
-			endif;
-				?>
-		</div>
-	</div>
-	<?php get_footer(); ?>
+
+<?php if (has_post_thumbnail($post->ID)) :
+    $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
+
+endif;
+?>
+
+<div id="primary" class=" page-header header-small" style="background-image: url(<?= $image[0] ?>)">
+    <div class="container">
+
+        <div class="col-md-10 col-md-offset-1 text-center">
+            <h1 class="hestia-title "><?php the_title() ?></h1>
+        </div>
+    </div>
+</div>
+
+<div class="main ">
+    <div class="blog-post ">
+        <div class="contatct-main">
+            <div class="container">
+
+                <?php echo do_shortcode('[cta]'); ?>
+
+				<?= the_content() ?>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<?php get_footer() ?>
+</div>
