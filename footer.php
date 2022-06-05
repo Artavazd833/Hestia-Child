@@ -1,21 +1,22 @@
 <footer id="footer">
     <div class="info flex jcenter acenter">
         <div class="footer_title jcenter">
-            Contact info
+            <?php the_field('footer_contacts_title', 'option') ?>
         </div>
         <div>
             <ul>
                 <li class="less">
-
-                    <a href="https://goo.gl/maps/cbGYz1vQZg93fAZ19" target="_blank" rel="noopener noreferrer">
-                        Yerevan, Admiral Isakov 48/29
-                    </a>
+                    <span><?php the_field('footer_addres_line', 'option') ?> </span>
                 </li>
                 <li class="less">
-                    <b> Phone </b><a href="tel:+374-93-97-97-70">(+374) 93 97 97 70 </a>
+                    <b><?php the_field('footer_phon_tex_spain', 'option') ?> </b>
+                    <a href="tel:<?php the_field('footer_phone_link', 'option') ?>"><?php the_field('footer_phone_link_nums', 'option') ?></a>
+                    
                 </li>
                 <li>
-                    <b>Mail։</b> <a href="mailto:info@walldeco.am">info@walldeco.am</a>
+                    <b><?php the_field('footer_email_text', 'option') ?></b>
+                   <a href="mailto:<?php the_field('footer_email_link', 'option') ?>"><?php the_field('footer_email_link', 'option') ?></a>
+                   
                 </li>
             </ul>
         </div>
@@ -33,7 +34,7 @@
         </ul>
 
     </div>
-    <div class='flex jcenter acenter copyright'> <?php the_field('copyright', 'option')?> <?php echo date('Y') ?> </div>
+    <div class='flex jcenter acenter copyright'> <?php the_field('copyright', 'option') ?> <?php echo date('Y') ?> </div>
 </footer>
 </div>
 </div>
