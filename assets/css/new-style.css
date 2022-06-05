@@ -422,7 +422,8 @@ textarea {
     overflow: auto;  
 }
 .contact-top-title {
-    margin-bottom: 0;
+    margin-bottom: 1em;
+    margin-top: 0;
     text-transform: uppercase;
 }
 @media only screen and (max-width: 1024px) {
