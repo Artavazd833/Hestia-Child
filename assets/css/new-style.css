@@ -421,6 +421,10 @@ textarea {
     max-height: 120px;
     overflow: auto;  
 }
+.contact-top-title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
 @media only screen and (max-width: 1024px) {
 
     .about-item {
@@ -504,6 +508,7 @@ textarea {
     background: #ffb933 !important;
     color: #fff!important;
 }
+#chaty-widget-0 > div > div > div.chaty-i-trigger > div.chaty-channel.chaty-cta-main.pos-left > div > button.open-chaty > span > svg > g > circle,
 #chaty-widget-0 > div > div > div.chaty-i-trigger > div.chaty-channel.chaty-cta-main.chaty-tooltip.pos-left.active > div > button.open-chaty > span > svg > g > circle {
     fill:#ffb933 !important; 
 }

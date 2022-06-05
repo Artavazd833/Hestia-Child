@@ -35,7 +35,7 @@ endif;
 
                 <div class="row acenter d-flex">
                     <div class="col-md-6 col-xs-12">
-                        <h2> <?php the_field('contact_form_header'); ?></h2>
+                        <h2 class="contact-top-title"> <?php the_field('contact_form_header'); ?></h2>
                         <?php the_field('contact_form_subtext'); ?>
                         <div class="form-container">
                         <?php the_field('contact_form_here'); ?>
