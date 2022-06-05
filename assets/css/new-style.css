@@ -498,3 +498,9 @@ textarea {
     }
 
 }
+
+
+.cli-bar-btn_container a{
+    background: #ffb933 !important;
+    color: #fff!important;
+}
