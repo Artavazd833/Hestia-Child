@@ -581,4 +581,12 @@ textarea {
        flex-direction: column;
 
     }
+    .gar-img {
+        margin: 0 8px;
+    } 
+    .garanty-item {
+        display: inline-flex;
+        margin: 0 16px;
+        width: 100%;
+    }
 }
