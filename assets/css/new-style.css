@@ -560,6 +560,7 @@ textarea {
     margin: 0 24px;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .gar-img {
