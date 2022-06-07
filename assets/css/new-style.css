@@ -538,3 +538,46 @@ textarea {
 #chaty-widget-0 > div > div > div.chaty-i-trigger > div.chaty-channel.chaty-cta-main.chaty-tooltip.pos-left.active > div > button.open-chaty > span > svg > g > circle {
     fill:#ffb933 !important; 
 }
+
+.garanty-wrap {
+    z-index: 9;
+    top: 74px;
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    padding: 16px;
+    display: none;
+}
+.garanty-wrap.show-1{
+    display: flex;
+}
+
+.garanty-item {
+    display: inline-flex;
+    margin: 0 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gar-img {
+    display: inline-block;
+    margin: 0 16px;
+    max-width: 38px;
+    max-height: 38px;
+    height: auto;
+    overflow: hidden;
+} 
+.gar-text {
+    font-size: 16px;
+    line-height: 1;
+}
+
+@media screen and (max-width:768px) {
+    .garanty-wrap{
+       flex-direction: column;
+
+    }
+}
