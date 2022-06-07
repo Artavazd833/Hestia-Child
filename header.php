@@ -53,16 +53,19 @@ if ((bool) $hide_top_bar === false) {
 			hestia_after_header_trigger();
 			?>
 			<div class="garanty-wrap  show-<?php the_field('showhide_garantie', 'option'); ?> ">
-				<?php if (have_rows('garanie', 'options')) : ?>
-					<?php while (have_rows('garanie', 'options')) : the_row(); ?>
+				<div class="container warranties">
+					<?php if (have_rows('garanie', 'options')) : ?>
+						<?php while (have_rows('garanie', 'options')) : the_row(); ?>
 
-						<div class="garanty-item">
-							<span class="gar-img"> <img src="<?php the_sub_field('item_image', 'option'); ?>"></span>
-							<span class="gar-text"><?php the_sub_field('item_text', 'option'); ?></span>
-						</div>
+							<div class="garanty-item">
+								<span class="gar-img"> <img src="<?php the_sub_field('item_image', 'option'); ?>"></span>
+								<span class="gar-text"><?php the_sub_field('item_text', 'option'); ?></span>
+							</div>
 
-					<?php endwhile; ?>
-				<?php endif; ?>
+						<?php endwhile; ?>
+					<?php endif; ?>
+				</div>
+
 
 			</div>
 		</header>

@@ -544,15 +544,20 @@ textarea {
     top: 74px;
     position: absolute;
     width: 100%;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+
+.warranties{
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: #fff;
     padding: 16px;
-    display: none;
+    width: 100%;
 }
 .garanty-wrap.show-1{
-    display: flex;
+    display: block;
 }
 
 .garanty-item {
@@ -578,7 +583,7 @@ textarea {
 }
 
 @media screen and (max-width:768px) {
-    .garanty-wrap{
+    .warranties{
        flex-direction: column;
 
     }
@@ -589,5 +594,6 @@ textarea {
         display: inline-flex;
         margin: 0 16px;
         width: 100%;
+        margin-bottom: 0.5em;
     }
 }
