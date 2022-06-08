@@ -540,25 +540,48 @@ textarea {
 }
 
 .garanty-wrap {
-    z-index: 9;
-    top: 71px;
-    position: absolute;
     width: 100%;
-    background: rgba(0,0,0,0.3);
-    display: none;
+    /* background-color: rgba(247,149,33,0.3); */
+    animation-name: example;
+    animation-duration: 5s;
 }
 
+@keyframes example {
+    from {
+        background-color: rgba(247,149,33,0.5);
+    }
+    to {
+        background-color: transparent;
+     }
+  }
+
+  .from-left{
+    animation-name: fromleft;
+    animation-duration: 2s;
+  }
+
+  .from-right{
+    animation-name: fromright;
+    animation-duration: 2s;
+  }
+
+  @keyframes fromleft {
+    from {transform: translateX(-200%);}
+    to {transform: translateX(0); }
+  }
+  
+  @keyframes fromright {
+    from {transform: translateX(200%);}
+    to {transform: translateX(0); }
+  }
 .warranties{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    color: #fff;
     padding: 16px;
     width: 100%;
 }
-.garanty-wrap.show-1{
-    display: block;
-}
+
 
 .garanty-item {
     display: inline-flex;
@@ -566,20 +589,53 @@ textarea {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 8px ;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    max-width: 20%;
+   min-height: 280px;
 }
+.garanty-item svg path{
+    fill: #F79521!important;
+    
+}
+
+
 
 .gar-img {
     display: inline-block;
+    width: 100%;
+    max-width: 160px;
     margin: 0 16px;
-    max-width: 38px;
-    max-height: 38px;
     height: auto;
     overflow: hidden;
     width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    animation: beat 0.75s infinite alternate;
+	transform-origin: center;
 } 
+@keyframes beat{
+	to { box-shadow: 0 0 10px silver;
+    transform: scale(1.05); }
+}
 .gar-text {
     font-size: 16px;
     line-height: 1;
+    color: #464646;
+    font-size: 1em;
+    padding: 0.5em;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.wraper{
+    width: 100%;
 }
 
 @media screen and (max-width:768px) {
@@ -588,21 +644,24 @@ textarea {
        padding: 8px;
     }
     .gar-img {
+        max-width: 50%;
         margin: 0 8px;
-        margin: 0 16px;
-        max-width: 30px;
-        max-height: 30px;
-
-    } 
+    }
     .garanty-item {
         display: inline-flex;
-        margin: 0 12px;
-        width: 100%;
-        margin-bottom: 0.5em;
+        margin: 16px;
+        padding: 8px;
+        border-radius: 15px;
+        max-width: 75%;
+        min-height: fit-content;
     }
     .gar-text {
         font-size: 14px;
         line-height: 1;
+    }
+    .wraper {
+        width: 100%;
+        max-width: 85%;
     }
 
 }
