@@ -541,7 +541,7 @@ textarea {
 
 .garanty-wrap {
     z-index: 9;
-    top: 74px;
+    top: 71px;
     position: absolute;
     width: 100%;
     background: rgba(0,0,0,0.3);
@@ -585,15 +585,24 @@ textarea {
 @media screen and (max-width:768px) {
     .warranties{
        flex-direction: column;
-
+       padding: 8px;
     }
     .gar-img {
         margin: 0 8px;
+        margin: 0 16px;
+        max-width: 30px;
+        max-height: 30px;
+
     } 
     .garanty-item {
         display: inline-flex;
-        margin: 0 16px;
+        margin: 0 12px;
         width: 100%;
         margin-bottom: 0.5em;
     }
+    .gar-text {
+        font-size: 14px;
+        line-height: 1;
+    }
+
 }
