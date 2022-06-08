@@ -665,3 +665,24 @@ textarea {
     }
 
 }
+@media screen and (max-width:365px) {
+   
+    .gar-img {
+        max-width: 45%;
+        margin: 0 8px;
+    }
+    .garanty-item {
+        margin: 8px;
+        padding: 8px;
+        max-width: 55%;
+    }
+    .gar-text {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .btn {
+        white-space: break-spaces;
+    
+    }
+
+}
