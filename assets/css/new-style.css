@@ -528,7 +528,9 @@ textarea {
     animation-duration: 2s;
     position: absolute;
     left: 0;
-    top:80px
+    bottom:0;
+    border-radius:50%;
+
   }
 
   .from-right{
@@ -559,6 +561,7 @@ textarea {
 .page-header.header-small> .wraper {
     position: static!important;
 }
+
 .garanty-item {  
     margin: 0 8px;
     padding: 8px ;
@@ -569,11 +572,15 @@ textarea {
     
 }
 .garanty-item.from-left .gar-text {
-    color: #fff;
-    font-size: 16px;
-    padding: 8px 16px;
-    background: #F79521;
-    border-radius: 2px;
+    color: #F79521;
+    font-size: 12px;
+    padding: 3em 2em;
+    background: #fff;
+    max-width: fit-content;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid;
+    line-height: 1.3;
 }
 
 
@@ -581,6 +588,7 @@ textarea {
     background-color: #fff;
     border-radius: 8px;
 }
+
 .garanty-item.from-right .gar-text  {
     font-weight: bold;
 }
@@ -639,11 +647,8 @@ textarea {
 
 @media screen and (max-width:768px) {
     .garanty-item.from-left .gar-text {
-        color: #fff;
-        font-size: 10px;
-        padding: 4px 8px;
-        background: #F79521;
-        border-radius: 2px;
+        font-size: 0.6em;
+        padding: 3em 2em;
     }
     .garanty-item {
         margin: 0px 4px;
