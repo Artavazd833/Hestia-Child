@@ -681,6 +681,9 @@ textarea {
     .navbar-default .navbar-nav>li>a {
         color: #777 !important;
     }
+    #footer .footer_icons .social_media>li {
+        margin: 4px;
+    }
 
 }
 
