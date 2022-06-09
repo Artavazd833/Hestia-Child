@@ -528,7 +528,7 @@ textarea {
     animation-duration: 2s;
     position: absolute;
     left: 0;
-    bottom:0;
+    bottom:3em;
     border-radius:50%;
 
   }
