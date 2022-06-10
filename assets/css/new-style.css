@@ -799,6 +799,7 @@ textarea {
     display: inline-block;
     border: 1px solid;
     line-height: 1.3;
+    word-wrap: initial;
 }
 
 
