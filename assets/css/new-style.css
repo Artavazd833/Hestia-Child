@@ -955,5 +955,11 @@ textarea {
     #footer .footer_icons .social_media>li {
         margin: 4px;
     }
+    .from-left{
+    
+        bottom:3.5em;
+
+    
+      }
 
 }
