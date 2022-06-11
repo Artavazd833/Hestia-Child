@@ -323,7 +323,7 @@ endif;
                                     <div class="views-row views-row-2 views-row-even views-row-last">
 
                                         <div class="views-field views-field-field-image">
-                                            <div class="field-content"><?php the_field('bottom_block2_img'); ?></div>
+                                            <div class="field-content form-container"><?php the_field('bottom_block2_img'); ?></div>
                                         </div>
                                         <div class="text-wrapper views-fieldset" data-module="views_fieldsets">
                                             <div class="views-field views-field-title"><span class="field-content"><?php the_field('bottom_block2_title'); ?></span></div>
