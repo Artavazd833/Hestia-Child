@@ -327,25 +327,7 @@ endif;
                                         </div>
                                         <div class="text-wrapper views-fieldset" data-module="views_fieldsets">
                                             <div class="views-field views-field-title"><span class="field-content"><?php the_field('bottom_block2_title'); ?></span></div>
-                                            <div class="views-field views-field-field-link">
-                                                <div class="field-content">
-
-                                                    <?php
-                                                    $link = get_field('bottom_block2_link');
-
-                                                    if ($link) :
-
-                                                        $link_url = $link['url'];
-
-                                                        $link_title = $link['title'];
-
-                                                        $link_target = $link['target'] ? $link['target'] : '_self'; ?>
-
-                                                        <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-
-                                                    <?php endif; ?>
-                                                </div>
-                                            </div>
+                                           
                                         </div>
 
                                     </div>
