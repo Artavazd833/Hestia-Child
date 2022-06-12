@@ -974,5 +974,8 @@ textarea {
 
     
       }
+      .hestia-title.home-title {
+        font-size: 40px;
+      }
 
 }

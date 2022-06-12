@@ -20,7 +20,7 @@ endif;
     <div class="wraper">
 
         <div class=" text-center">
-            <h1 class="hestia-title "><?php the_title() ?></h1>
+            <h1 class="hestia-title home-title "><?php the_title() ?></h1>
             <div class="">
                 <div class=" text-center ">
                     <div class="garanty-wrap ">
