@@ -179,7 +179,25 @@ endif;
 
                             </div>
                         </div>
-                    </div><!-- /.block -->
+                    </div>
+
+                    <div class="container more-services">
+
+                        <?php
+                        $link = get_field('more_services_link');
+
+                        if ($link) :
+
+                            $link_url = $link['url'];
+
+                            $link_title = $link['title'];
+
+                            $link_target = $link['target'] ? $link['target'] : '_self'; ?>
+
+                            <a class="btn btn-primary" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+
+                        <?php endif; ?>
+                    </div>
                     <div id="block-views-banner-block-banner" class="block block-views custom last even block-2 custom banner-block">
 
                         <div class="content no-block-title">
@@ -234,11 +252,14 @@ endif;
                 </div>
             </div>
 
-            <div class="full-width-colored-wrapper">
+
+
+
+            <div class="full-width-colored-wrapper"  style="margin-top:4em ;">
                 <div class="region region-fullwidth-colored">
                     <div class="block block-views custom first odd block-1 custom customer-story-block">
 
-                        <div class="content no-block-title">
+                        <div class="content no-block-title show-users<?php the_field('hide_show_tes'); ?> ">
                             <div id='slider-costumer' class="view view-customer-stories view-id-customer_stories view-display-id-block_customer_story customer-story random view-dom-id-aa3d64fff8ac6dacab6742e48b69f9f9">
 
 
@@ -327,7 +348,7 @@ endif;
                                         </div>
                                         <div class="text-wrapper views-fieldset" data-module="views_fieldsets">
                                             <div class="views-field views-field-title"><span class="field-content"><?php the_field('bottom_block2_title'); ?></span></div>
-                                           
+
                                         </div>
 
                                     </div>
